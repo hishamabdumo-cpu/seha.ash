@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>صحة - منصة الخدمات الصحية</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <link rel="stylesheet" href="stylee.css"> 
+</head>
+<body>
+  <!-- Header Navigation -->
+  <div class="top-header" id="mainHeader">
+       <img src="https://i.postimg.cc/9QBmnSBw/sht.png" alt="شعار صحة" class="brand-logo" />
+    <div class="hamburger-icon" id="hamburgerMenuIcon" onclick="toggleNavigationMenu()">&#9776;</div>
+  </div>
+
+  <!-- Navigation Popup Menu -->
+  <div class="navigation-popup-menu" id="navigationPopupMenu">
+    <div class="popup-close-btn" onclick="toggleNavigationMenu()">X</div>
+    <a href="https://www.seha.sa/ui#/services" class="popup-menu-item" onclick="toggleNavigationMenu()">الخدمات</a>
+    <a href="https://www.seha.sa/ui#/inquiries" class="popup-menu-item" onclick="toggleNavigationMenu()">الاستعلامات</a>
+    <a href="https://www.seha.sa/ui#/iamredirection/1" class="popup-menu-item" onclick="toggleNavigationMenu()">إنشاء حساب</a>
+    <a href="https://www.seha.sa/ui#/account/login" class="popup-menu-login" onclick="toggleNavigationMenu()"><span>👨‍💼</span>تسجيل الدخول</a>
+<button onclick="adminLogin()" class="secondary-btn" style="text-decoration: none; display: block; text-align: center; margin-top: 20px; border: none; background: #2e6fb9; color: white; padding: 6px 10px; border-radius: 8px; width: 120px; cursor: pointer; margin: 15px auto;">
+  الدخول كمسؤول
+</button>
+  </div>
+
+  <!-- Main Content Section -->
+  <div style="text-align: center;">
+    <h1>الإجازات المرضية</h1>
+  </div>
+  
+  <p class="primary-description">
+    خدمة الاستعلام عن الإجازات المرضية تتيح لك الاستعلام عن حالة طلبك للإجازة ويمكنك طباعتها عن طريق تطبيق صحتي
+  </p>
+
+  <!-- Error Message for Empty Fields -->
+  <div id="emptyFieldsErrorMessage" class="empty-field-error-message">فضلا اكتب الرمز ورقم الهوية.</div>
+
+  <!-- Form Input Fields -->
+  <div class="form-input-container" id="serviceCodeContainer">
+    <input id="serviceCode" type="text" class="form-input-field" placeholder="رمز الخدمة" maxlength="40" oninput="hideEmptyFieldError()" autocomplete="off" />
+  </div>
+  <div class="form-input-container" id="identityNumberContainer">
+    <input id="identityNumber" type="text" class="form-input-field" placeholder="رقم الهوية / الإقامة" maxlength="20" inputmode="text" oninput="hideEmptyFieldError()" autocomplete="off" />
+  </div>
+
+  <!-- Error Tab for Incorrect Data -->
+  <div id="errorMessageTab" class="error-message-tab">لم يتم العثور على بيانات مطابقة. تأكد من الرمز ورقم الهوية.</div>
+
+  <!-- Search Button -->
+  <button class="primary-btn" id="searchButton" type="button">
+    <span id="searchButtonText">استعلام</span>
+    <span id="loadingSpinnerElement" class="spinner-loading" aria-hidden="true"></span>
+  </button>
+  
+  <!-- Back Button -->
+  <a href="https://www.seha.sa/ui#/inquiries" class="secondary-btn" id="backButton" style="text-decoration: none; display: block; text-align: center;">رجوع للاستعلامات</a>
+
+  <!-- Results Display -->
+  <div id="resultsDisplayBox" class="results-display-box"></div>
+
+  <!-- Additional Action Buttons -->
+  <button class="tertiary-btn" id="newSearchButton" type="button">استعلام جديد</button>
+  <a href="https://www.seha.sa/ui#/inquiries" class="quaternary-btn" id="backToListButton" style="text-decoration: none; display: none; text-align: center;">رجوع للاستعلامات</a>
+
+    <!-- Footer Section -->
+  <div class="page-footer">
+  <img src="https://i.postimg.cc/RZDWP4c9/image.png" style="height: 80px; width: auto;" alt="شعار صحتي" />
+    <div class="primary-menu-title">القائمة الرئيسية</div>
+    <div class="footer-navigation-links">
+      <div><a href="https://www.seha.sa/ui#/services" style="color: white; text-decoration: none;">الخدمات</a></div>
+      <div><a href="https://www.seha.sa/ui#/inquiries" style="color: white; text-decoration: none;">الاستعلامات</a></div>
+      <div><a href="https://www.seha.sa/ui#/faq" style="color: white; text-decoration: none;">الأسئلة الشائعة</a></div>
+      <div><a href="https://www.seha.sa/ui#/ContactUs" style="color: white; text-decoration: none;">تواصل معنا</a></div>
+    </div>
+    <div class="contact-section-title">تواصل معنا</div>
+    <div class="contact-divider-line"></div>
+    <div class="contact-section" style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; width: 100%; max-width: 800px;">
+      <div style="text-align: right;">
+        <div class="contact-icon"><i class=""></i><span>📞 اتصال 920002005</span></div>
+        <div class="contact-icon"><i class=""></i><span>📧 البريد الاكتروني support@seha.sa</span></div>
+        <div class="contact-icon"><i class=""></i><span>💬وتساب 920002005</span></div>
+      </div>
+      <div style="display: flex; align-items: center; gap: 20px;">
+        <img src="https://www.seha.sa/assets/lean-logo-De0NEeoI.svg" style="height: 50px;" alt="شعار لين" />
+        <div style="height: 50px; border-right: 2px solid white;"></div>
+        <img src="https://www.seha.sa/assets/MOH-logo-DYiHZCSg.svg" style="height: 50px;" alt="شعار الصحة" />
+      </div>
+      <div class="working-hours">
+        أوقات العمل : الأحد حتى الخميس 8 ص - 11 م
+        <br><br><br>
+      </div>
+    </div>
+    <div class="footer-bottom-text">
+      منصة صحة معتمدة من قبل وزارة الصحة 2026<br>
+      سياسة الخصوصية وشروط الإستخدام | دليل الاستخدام
+    </div>
+  </div>
+
+
+  <!-- JS -->
+  <script src="script.js"></script>
+</body>
+</html>
