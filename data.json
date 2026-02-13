@@ -1,60 +1,6 @@
 {
   "leaves": [
-    {
-      "leaveCode": "55886151331",
-      "serviceCode": "55886151331",
-      "nationalId": "1101879896",
-      "idNumber": "1101879896",
-      "name": "أسامة عبيد الله عبد الله علي العلياني",
-      "admissionDate": "2025-06-11",
-      "dischargeDate": "2025-06-11",
-      "leaveDuration": "1",
-      "doctorName": "علي بكر",
-      "jobTitle": "طب بشري",
-      "issueDate": "2025-06-11",
-      "leaveType": "اعتيادية"
-    },
-      {
-    "leaveCode": "25120995004",
-      "serviceCode": "25120995004",
-      "nationalId": "1142200300",
-      "idNumber": "1142200300",
-      "name": " الحارث عبدالله احمد الحارثي",
-      "admissionDate": "2026-01-04",
-      "dischargeDate": "2026-01-04",
-      "leaveDuration": "1",
-      "doctorName": " محمد عيد محفوظ   ",
-      "jobTitle": "طبيب عام ",
-      "issueDate": "2026-01-04",
-      "leaveType": "GSL"
-    },
-    {
-    "leaveCode": "25120995008",
-      "serviceCode": "25120995008",
-      "nationalId": "1142200300",
-      "idNumber": "1142200300",
-      "name": " الحارث عبدالله احمد الحارثي",
-      "admissionDate": "2026-01-04",
-      "dischargeDate": "2026-01-04",
-      "leaveDuration": "1",
-      "doctorName": " محمد عيد محفوظ   ",
-      "jobTitle": "طبيب عام ",
-      "issueDate": "2026-01-04",
-      "leaveType": "GSL"
-    },
-{
-    "leaveCode": "25120995114",
-      "serviceCode": "25120995114",
-      "nationalId": "1142200333",
-      "idNumber": "1142200333",
-      "name": " المهلب عبداللهأحمد",
-      "admissionDate": "2026-02-15",
-      "dischargeDate": "2026-02-15",
-      "leaveDuration": "1",
-      "doctorName": " يحيى هشام عبدة   ",
-      "jobTitle": "طبيب عام ",
-      "issueDate": "2026-02-15",
-      "leaveType": "GSL"
-    }
+    {"leaveCode": "25121995001","serviceCode": "25121995001","nationalId": "1234567881","idNumber": "1234567881","name": "أحمد علي","admissionDate": "2026-02-09","dischargeDate": "2026-02-12","leaveDuration": "3","doctorName": "هالة أحمد","jobTitle": "طبيب مختص","issueDate": "2026-02-09","leaveType": "PSL"},
+    {"leaveCode": "25121995006","serviceCode": "25121995006","nationalId": "1234567880","idNumber": "1234567880","name": "سعد محمود محمد","admissionDate": "2026-02-10","dischargeDate": "2026-02-13","leaveDuration": "4","doctorName": "عليا هشام","jobTitle": "طبيب عام","issueDate": "2026-02-10","leaveType": "PSL"}
   ]
 }
