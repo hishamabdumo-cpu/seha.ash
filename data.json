@@ -1,6 +1,1 @@
-{
-  "leaves": [
-    {"leaveCode": "25121995001","serviceCode": "25121995001","nationalId": "1234567881","idNumber": "1234567881","name": "أحمد علي","admissionDate": "2026-02-09","dischargeDate": "2026-02-12","leaveDuration": "3","doctorName": "هالة أحمد","jobTitle": "طبيب مختص","issueDate": "2026-02-09","leaveType": "PSL"},
-    {"leaveCode": "25121995006","serviceCode": "25121995006","nationalId": "1234567880","idNumber": "1234567880","name": "سعد محمود محمد","admissionDate": "2026-02-10","dischargeDate": "2026-02-13","leaveDuration": "4","doctorName": "عليا هشام","jobTitle": "طبيب عام","issueDate": "2026-02-10","leaveType": "PSL"}
-  ]
-}
+{"leaves":[{"leaveCode":"25121995007","serviceCode":"25121995007","nationalId":"1079890867","idNumber":"1079890867","name":"اسامه زبن علي السلمي","admissionDate":"2026-02-15","dischargeDate":"2026-02-15","leaveDuration":"1","doctorName":"د. خالد عبدالله بخش","jobTitle":"طبيب عام","issueDate":"2026-02-15","leaveType":"PSL"}]}
